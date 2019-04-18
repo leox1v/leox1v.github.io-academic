@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leonard Adolphs on Leonard Adolphs</title>
+    <link>https://leox1v.com/</link>
+    <description>Recent content in Leonard Adolphs on Leonard Adolphs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0900</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Local Saddle Point Optimization: A Curvature Exploitation Approach</title>
+      <link>https://leox1v.com/publication/local_saddle_opt/</link>
+      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://leox1v.com/publication/local_saddle_opt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ellipsoidal Trust Region Methods for Neural Network Optimization</title>
+      <link>https://leox1v.com/publication/etr/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://leox1v.com/publication/etr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leox1v.com/home/reading-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leox1v.com/home/reading-list/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

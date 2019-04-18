@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>0 on Leonard Adolphs</title>
+    <link>https://leox1v.com/publication_types/0/</link>
+    <description>Recent content in 0 on Leonard Adolphs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://leox1v.com/publication_types/0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ellipsoidal Trust Region Methods for Neural Network Optimization</title>
+      <link>https://leox1v.com/publication/etr/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://leox1v.com/publication/etr/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
