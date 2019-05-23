@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>J Kohler* on Leonard Adolphs</title>
+    <title>J Kohler * on Leonard Adolphs</title>
     <link>https://leox1v.com/authors/j-kohler/</link>
-    <description>Recent content in J Kohler* on Leonard Adolphs</description>
+    <description>Recent content in J Kohler * on Leonard Adolphs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 23 Jan 2018 00:00:00 +0000</lastBuildDate>
@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Ellipsoidal Trust Region Methods for Neural Network Optimization</title>
+      <title>Ellipsoidal Trust Region Methods and the Marginal Value of Hessian Information for Neural Network Training</title>
       <link>https://leox1v.com/publication/etr/</link>
       <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
       

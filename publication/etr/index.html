@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="We propose the use of ellipsoidal trust region constraints for second-order optimization of neural networks. This approach can be seen as the second-order counterpart of adaptive gradient methods such as Adagrad, which we here show to be interpretable as ﬁrst-order trust region methods with ellipsoidal constraints. We show that these ellipsoids satisfy the necessary conditions for convergence and report that they constantly outperform their spherical counterpart. For large-scale datasets, we propose a modiﬁcation to the trust region framework to improve its computational efﬁciency. In this regard, we report comparable performance to ﬁrst-order algorithms in terms of wall-clock time and often superior performance in terms of backpropagations and epochs. Next to algorithmic advances of second-order methods, this work also provides new insights into the inner workings of adaptive gradient methods. Particularly, we ﬁnd that diagonal preconditioning is very effective since many neural network problems exhibit diagonally dominated Hessian matrices.">
+  <meta name="description" content="We investigate the use of ellipsoidal trust region constraints for second-order optimization of neural networks. This approach can be seen as a higher-order counterpart of adaptive gradient methods, which we here show to be interpretable as first-order trust region methods with ellipsoidal constraints. In particular, we show that the preconditioning matrix used in RMSProp and Adam satisfies the necessary conditions for convergence of (first- and) second-order trust region methods and report that this ellipsoidal constraint constantly outperforms its spherical counterpart in practice. We furthermore set out to clarify the long-standing question of the potential superiority of Newton methods in deep learning. In this regard, we run extensive benchmarks across different datasets and architectures to find that comparable performance to gradient descent algorithms can be achieved but using Hessian information does not give rise to better limit points and comes at the cost of increased hyperparameter tuning.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://leox1v.com/publication/etr/">
@@ -131,8 +131,8 @@
   
   <meta property="og:site_name" content="Leonard Adolphs">
   <meta property="og:url" content="https://leox1v.com/publication/etr/">
-  <meta property="og:title" content="Ellipsoidal Trust Region Methods for Neural Network Optimization | Leonard Adolphs">
-  <meta property="og:description" content="We propose the use of ellipsoidal trust region constraints for second-order optimization of neural networks. This approach can be seen as the second-order counterpart of adaptive gradient methods such as Adagrad, which we here show to be interpretable as ﬁrst-order trust region methods with ellipsoidal constraints. We show that these ellipsoids satisfy the necessary conditions for convergence and report that they constantly outperform their spherical counterpart. For large-scale datasets, we propose a modiﬁcation to the trust region framework to improve its computational efﬁciency. In this regard, we report comparable performance to ﬁrst-order algorithms in terms of wall-clock time and often superior performance in terms of backpropagations and epochs. Next to algorithmic advances of second-order methods, this work also provides new insights into the inner workings of adaptive gradient methods. Particularly, we ﬁnd that diagonal preconditioning is very effective since many neural network problems exhibit diagonally dominated Hessian matrices."><meta property="og:image" content="https://leox1v.com/publication/etr/featured.png">
+  <meta property="og:title" content="Ellipsoidal Trust Region Methods and the Marginal Value of Hessian Information for Neural Network Training | Leonard Adolphs">
+  <meta property="og:description" content="We investigate the use of ellipsoidal trust region constraints for second-order optimization of neural networks. This approach can be seen as a higher-order counterpart of adaptive gradient methods, which we here show to be interpretable as first-order trust region methods with ellipsoidal constraints. In particular, we show that the preconditioning matrix used in RMSProp and Adam satisfies the necessary conditions for convergence of (first- and) second-order trust region methods and report that this ellipsoidal constraint constantly outperforms its spherical counterpart in practice. We furthermore set out to clarify the long-standing question of the potential superiority of Newton methods in deep learning. In this regard, we run extensive benchmarks across different datasets and architectures to find that comparable performance to gradient descent algorithms can be achieved but using Hessian information does not give rise to better limit points and comes at the cost of increased hyperparameter tuning."><meta property="og:image" content="https://leox1v.com/publication/etr/featured.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-01-23T00:00:00&#43;00:00">
@@ -144,7 +144,7 @@
 
   
 
-  <title>Ellipsoidal Trust Region Methods for Neural Network Optimization | Leonard Adolphs</title>
+  <title>Ellipsoidal Trust Region Methods and the Marginal Value of Hessian Information for Neural Network Training | Leonard Adolphs</title>
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
   <aside class="search-results" id="search">
@@ -301,7 +301,7 @@
   <div class="row">
     <div class="col-6">
       <div class="split-header-content">
-        <h1 itemprop="name">Ellipsoidal Trust Region Methods for Neural Network Optimization</h1>
+        <h1 itemprop="name">Ellipsoidal Trust Region Methods and the Marginal Value of Hessian Information for Neural Network Training</h1>
 
         
 
@@ -320,12 +320,12 @@
   <div>
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
       <span itemprop="name">
-        <a href="/authors/j-kohler/">J Kohler*</a>
+        <a href="/authors/l-adolphs/"><strong>L Adolphs</strong> *</a>
       </span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
       <span itemprop="name">
-        <a href="/authors/l-adolphs/"><strong>L Adolphs</strong>*</a>
+        <a href="/authors/j-kohler/">J Kohler *</a>
       </span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
@@ -419,7 +419,7 @@
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://google.com" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/abs/1905.09201" target="_blank" rel="noopener">
     
     arXiv
   </a>
@@ -443,7 +443,7 @@
 </div>
 
 <div class="article-container d-xl-none">
-  <h1 itemprop="name">Ellipsoidal Trust Region Methods for Neural Network Optimization</h1>
+  <h1 itemprop="name">Ellipsoidal Trust Region Methods and the Marginal Value of Hessian Information for Neural Network Training</h1>
 
   
 
@@ -462,12 +462,12 @@
   <div>
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
       <span itemprop="name">
-        <a href="/authors/j-kohler/">J Kohler*</a>
+        <a href="/authors/l-adolphs/"><strong>L Adolphs</strong> *</a>
       </span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
       <span itemprop="name">
-        <a href="/authors/l-adolphs/"><strong>L Adolphs</strong>*</a>
+        <a href="/authors/j-kohler/">J Kohler *</a>
       </span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
@@ -564,7 +564,7 @@
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://google.com" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/abs/1905.09201" target="_blank" rel="noopener">
     
     arXiv
   </a>
@@ -581,7 +581,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">We propose the use of ellipsoidal trust region constraints for second-order optimization of neural networks. This approach can be seen as the second-order counterpart of adaptive gradient methods such as Adagrad, which we here show to be interpretable as ﬁrst-order trust region methods with ellipsoidal constraints. We show that these ellipsoids satisfy the necessary conditions for convergence and report that they constantly outperform their spherical counterpart. For large-scale datasets, we propose a modiﬁcation to the trust region framework to improve its computational efﬁciency. In this regard, we report comparable performance to ﬁrst-order algorithms in terms of wall-clock time and often superior performance in terms of backpropagations and epochs. Next to algorithmic advances of second-order methods, this work also provides new insights into the inner workings of adaptive gradient methods. Particularly, we ﬁnd that diagonal preconditioning is very effective since many neural network problems exhibit diagonally dominated Hessian matrices.</p>
+    <p class="pub-abstract" itemprop="text">We investigate the use of ellipsoidal trust region constraints for second-order optimization of neural networks. This approach can be seen as a higher-order counterpart of adaptive gradient methods, which we here show to be interpretable as first-order trust region methods with ellipsoidal constraints. In particular, we show that the preconditioning matrix used in RMSProp and Adam satisfies the necessary conditions for convergence of (first- and) second-order trust region methods and report that this ellipsoidal constraint constantly outperforms its spherical counterpart in practice. We furthermore set out to clarify the long-standing question of the potential superiority of Newton methods in deep learning. In this regard, we run extensive benchmarks across different datasets and architectures to find that comparable performance to gradient descent algorithms can be achieved but using Hessian information does not give rise to better limit points and comes at the cost of increased hyperparameter tuning.</p>
     
 
     

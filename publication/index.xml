@@ -6,7 +6,7 @@
     <description>Recent content in Publications on Leonard Adolphs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://leox1v.com/publication/index.xml" rel="self" type="application/rss+xml" />
     
@@ -21,7 +21,7 @@
     </item>
     
     <item>
-      <title>Ellipsoidal Trust Region Methods for Neural Network Optimization</title>
+      <title>Ellipsoidal Trust Region Methods and the Marginal Value of Hessian Information for Neural Network Training</title>
       <link>https://leox1v.com/publication/etr/</link>
       <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
       
