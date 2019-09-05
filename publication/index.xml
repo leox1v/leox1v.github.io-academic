@@ -12,20 +12,29 @@
     
     
     <item>
-      <title>Local Saddle Point Optimization: A Curvature Exploitation Approach</title>
-      <link>https://leox1v.com/publication/local_saddle_opt/</link>
-      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      <title>LeDeepChef 👨🏻‍🍳 : Deep Reinforcement Learning Agent for Families of Text-Based Games</title>
+      <link>https://leox1v.com/publication/ftwp/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leox1v.com/publication/local_saddle_opt/</guid>
+      <guid>https://leox1v.com/publication/ftwp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ellipsoidal Trust Region Methods and the Marginal Value of Hessian Information for Neural Network Training</title>
       <link>https://leox1v.com/publication/etr/</link>
-      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://leox1v.com/publication/etr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Local Saddle Point Optimization: A Curvature Exploitation Approach</title>
+      <link>https://leox1v.com/publication/local_saddle_opt/</link>
+      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://leox1v.com/publication/local_saddle_opt/</guid>
       <description></description>
     </item>
     

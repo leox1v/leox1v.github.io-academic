@@ -6,10 +6,19 @@
     <description>Recent content in T Hofmann on Leonard Adolphs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://leox1v.com/authors/t-hofmann/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LeDeepChef 👨🏻‍🍳 : Deep Reinforcement Learning Agent for Families of Text-Based Games</title>
+      <link>https://leox1v.com/publication/ftwp/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leox1v.com/publication/ftwp/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Local Saddle Point Optimization: A Curvature Exploitation Approach</title>

@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="We investigate the use of ellipsoidal trust region constraints for second-order optimization of neural networks. This approach can be seen as a higher-order counterpart of adaptive gradient methods, which we here show to be interpretable as first-order trust region methods with ellipsoidal constraints. In particular, we show that the preconditioning matrix used in RMSProp and Adam satisfies the necessary conditions for convergence of (first- and) second-order trust region methods and report that this ellipsoidal constraint constantly outperforms its spherical counterpart in practice. We furthermore set out to clarify the long-standing question of the potential superiority of Newton methods in deep learning. In this regard, we run extensive benchmarks across different datasets and architectures to find that comparable performance to gradient descent algorithms can be achieved but using Hessian information does not give rise to better limit points and comes at the cost of increased hyperparameter tuning.">
+  <meta name="description" content="While Reinforcement Learning (RL) approaches lead to significant achievements in a variety of areas in recent history, natural language tasks remained mostly unaffected, due to the compositional and combinatorial nature that makes them notoriously hard to optimize. With the emerging field of Text-Based Games (TBGs), researchers try to bridge this gap. Inspired by the success of RL algorithms on Atari games, the idea is to develop new methods in a restricted game world and then gradually move to more complex environments. Previous work in the area of TBGs has mainly focused on solving individual games. We, however, consider the task of designing an agent that not just succeeds in a single game, but performs well across a whole family of games, sharing the same theme. In this work, we present our deep RL agent---LeDeepChef---that shows generalization capabilities to never-before-seen games of the same family with different environments and task descriptions. The agent participated in Microsoft Research&#39;s *First TextWorld Problems: A Language and Reinforcement Learning Challenge* and outperformed all but one competitor on the final test set. The games from the challenge all share the same theme, namely cooking in a modern house environment, but differ significantly in the arrangement of the rooms, the presented objects, and the specific goal (recipe to cook). To build an agent that achieves high scores across a whole family of games, we use an actor-critic framework and prune the action-space by using ideas from hierarchical reinforcement learning and a specialized module trained on a recipe database.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://leox1v.com/publication/etr/">
+  <link rel="alternate" hreflang="en-us" href="https://leox1v.com/publication/ftwp/">
 
   
 
@@ -119,7 +119,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://leox1v.com/publication/etr/">
+  <link rel="canonical" href="https://leox1v.com/publication/ftwp/">
 
   
   
@@ -130,21 +130,21 @@
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Leonard Adolphs">
-  <meta property="og:url" content="https://leox1v.com/publication/etr/">
-  <meta property="og:title" content="Ellipsoidal Trust Region Methods and the Marginal Value of Hessian Information for Neural Network Training | Leonard Adolphs">
-  <meta property="og:description" content="We investigate the use of ellipsoidal trust region constraints for second-order optimization of neural networks. This approach can be seen as a higher-order counterpart of adaptive gradient methods, which we here show to be interpretable as first-order trust region methods with ellipsoidal constraints. In particular, we show that the preconditioning matrix used in RMSProp and Adam satisfies the necessary conditions for convergence of (first- and) second-order trust region methods and report that this ellipsoidal constraint constantly outperforms its spherical counterpart in practice. We furthermore set out to clarify the long-standing question of the potential superiority of Newton methods in deep learning. In this regard, we run extensive benchmarks across different datasets and architectures to find that comparable performance to gradient descent algorithms can be achieved but using Hessian information does not give rise to better limit points and comes at the cost of increased hyperparameter tuning."><meta property="og:image" content="https://leox1v.com/publication/etr/featured.png">
+  <meta property="og:url" content="https://leox1v.com/publication/ftwp/">
+  <meta property="og:title" content="LeDeepChef 👨🏻‍🍳 : Deep Reinforcement Learning Agent for Families of Text-Based Games | Leonard Adolphs">
+  <meta property="og:description" content="While Reinforcement Learning (RL) approaches lead to significant achievements in a variety of areas in recent history, natural language tasks remained mostly unaffected, due to the compositional and combinatorial nature that makes them notoriously hard to optimize. With the emerging field of Text-Based Games (TBGs), researchers try to bridge this gap. Inspired by the success of RL algorithms on Atari games, the idea is to develop new methods in a restricted game world and then gradually move to more complex environments. Previous work in the area of TBGs has mainly focused on solving individual games. We, however, consider the task of designing an agent that not just succeeds in a single game, but performs well across a whole family of games, sharing the same theme. In this work, we present our deep RL agent---LeDeepChef---that shows generalization capabilities to never-before-seen games of the same family with different environments and task descriptions. The agent participated in Microsoft Research&#39;s *First TextWorld Problems: A Language and Reinforcement Learning Challenge* and outperformed all but one competitor on the final test set. The games from the challenge all share the same theme, namely cooking in a modern house environment, but differ significantly in the arrangement of the rooms, the presented objects, and the specific goal (recipe to cook). To build an agent that achieves high scores across a whole family of games, we use an actor-critic framework and prune the action-space by using ideas from hierarchical reinforcement learning and a specialized module trained on a recipe database."><meta property="og:image" content="https://leox1v.com/publication/ftwp/featured.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-01-23T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2019-08-28T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2019-01-23T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2019-08-28T00:00:00&#43;00:00">
   
 
   
 
-  <title>Ellipsoidal Trust Region Methods and the Marginal Value of Hessian Information for Neural Network Training | Leonard Adolphs</title>
+  
+
+  <title>LeDeepChef 👨🏻‍🍳 : Deep Reinforcement Learning Agent for Families of Text-Based Games | Leonard Adolphs</title>
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
   <aside class="search-results" id="search">
@@ -292,7 +292,7 @@
 
 
 <div class="article-header d-xl-none">
-  <div class="featured-image" style="background-image: url('/publication/etr/featured_hu5db7f7105b4a8899c3123d566e137832_377754_800x0_resize_box_2.png');"></div>
+  <div class="featured-image" style="background-image: url('/publication/ftwp/featured_hub3721f7a77c8344deaaf2380970c3398_291242_800x0_resize_box_2.png');"></div>
   
 </div>
 
@@ -301,15 +301,15 @@
   <div class="row">
     <div class="col-6">
       <div class="split-header-content">
-        <h1 itemprop="name">Ellipsoidal Trust Region Methods and the Marginal Value of Hessian Information for Neural Network Training</h1>
+        <h1 itemprop="name">LeDeepChef 👨🏻‍🍳 : Deep Reinforcement Learning Agent for Families of Text-Based Games</h1>
 
         
 
         
 
 
-<meta content="2019-01-23 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2019-01-23 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+<meta content="2019-08-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2019-08-28 00:00:00 &#43;0000 UTC" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -325,12 +325,7 @@
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
       <span itemprop="name">
-        <a href="/authors/j-kohler/">J Kohler *</a>
-      </span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        <a href="/authors/a-lucchi/">A Lucchi</a>
+        <a href="/authors/t-hofmann/">T Hofmann</a>
       </span>
     </span>
     
@@ -344,7 +339,7 @@
     
       
     
-    <time>January 2019</time>
+    <time>August 2019</time>
   </span>
   
 
@@ -353,7 +348,7 @@
   
   
   <span class="middot-divider"></span>
-  <a href="/publication/etr/#disqus_thread"></a>
+  <a href="/publication/ftwp/#disqus_thread"></a>
   
 
   
@@ -419,9 +414,41 @@
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/abs/1905.09201" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary my-1 mr-1" href="http://arxiv.org/abs/1909.01646" target="_blank" rel="noopener">
     
     arXiv
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/leox1v/FirstTextWorldProblems" target="_blank" rel="noopener">
+    
+    Code
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://medium.com/@leonard.adolphs.95/ledeepchef-deep-reinforcement-learning-agent-for-families-of-text-based-games-a228214378f9" target="_blank" rel="noopener">
+    
+    Medium
   </a>
 
 
@@ -435,7 +462,7 @@
     </div>
     <div class="col-6">
       <div class="split-header-image">
-        <img src="/publication/etr/featured_hu5db7f7105b4a8899c3123d566e137832_377754_680x500_fill_q90_box_smart1_2.png" itemprop="image" alt="">
+        <img src="/publication/ftwp/featured_hub3721f7a77c8344deaaf2380970c3398_291242_680x500_fill_q90_box_smart1_2.png" itemprop="image" alt="">
         
       </div>
     </div>
@@ -443,15 +470,15 @@
 </div>
 
 <div class="article-container d-xl-none">
-  <h1 itemprop="name">Ellipsoidal Trust Region Methods and the Marginal Value of Hessian Information for Neural Network Training</h1>
+  <h1 itemprop="name">LeDeepChef 👨🏻‍🍳 : Deep Reinforcement Learning Agent for Families of Text-Based Games</h1>
 
   
 
   
 
 
-<meta content="2019-01-23 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2019-01-23 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+<meta content="2019-08-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2019-08-28 00:00:00 &#43;0000 UTC" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -467,12 +494,7 @@
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
       <span itemprop="name">
-        <a href="/authors/j-kohler/">J Kohler *</a>
-      </span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        <a href="/authors/a-lucchi/">A Lucchi</a>
+        <a href="/authors/t-hofmann/">T Hofmann</a>
       </span>
     </span>
     
@@ -486,7 +508,7 @@
     
       
     
-    <time>January 2019</time>
+    <time>August 2019</time>
   </span>
   
 
@@ -495,7 +517,7 @@
   
   
   <span class="middot-divider"></span>
-  <a href="/publication/etr/#disqus_thread"></a>
+  <a href="/publication/ftwp/#disqus_thread"></a>
   
 
   
@@ -564,9 +586,41 @@
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/abs/1905.09201" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary my-1 mr-1" href="http://arxiv.org/abs/1909.01646" target="_blank" rel="noopener">
     
     arXiv
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/leox1v/FirstTextWorldProblems" target="_blank" rel="noopener">
+    
+    Code
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://medium.com/@leonard.adolphs.95/ledeepchef-deep-reinforcement-learning-agent-for-families-of-text-based-games-a228214378f9" target="_blank" rel="noopener">
+    
+    Medium
   </a>
 
 
@@ -581,7 +635,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">We investigate the use of ellipsoidal trust region constraints for second-order optimization of neural networks. This approach can be seen as a higher-order counterpart of adaptive gradient methods, which we here show to be interpretable as first-order trust region methods with ellipsoidal constraints. In particular, we show that the preconditioning matrix used in RMSProp and Adam satisfies the necessary conditions for convergence of (first- and) second-order trust region methods and report that this ellipsoidal constraint constantly outperforms its spherical counterpart in practice. We furthermore set out to clarify the long-standing question of the potential superiority of Newton methods in deep learning. In this regard, we run extensive benchmarks across different datasets and architectures to find that comparable performance to gradient descent algorithms can be achieved but using Hessian information does not give rise to better limit points and comes at the cost of increased hyperparameter tuning.</p>
+    <p class="pub-abstract" itemprop="text">While Reinforcement Learning (RL) approaches lead to significant achievements in a variety of areas in recent history, natural language tasks remained mostly unaffected, due to the compositional and combinatorial nature that makes them notoriously hard to optimize. With the emerging field of Text-Based Games (TBGs), researchers try to bridge this gap. Inspired by the success of RL algorithms on Atari games, the idea is to develop new methods in a restricted game world and then gradually move to more complex environments. Previous work in the area of TBGs has mainly focused on solving individual games. We, however, consider the task of designing an agent that not just succeeds in a single game, but performs well across a whole family of games, sharing the same theme. In this work, we present our deep RL agent&mdash;LeDeepChef&mdash;that shows generalization capabilities to never-before-seen games of the same family with different environments and task descriptions. The agent participated in Microsoft Research&rsquo;s <em>First TextWorld Problems: A Language and Reinforcement Learning Challenge</em> and outperformed all but one competitor on the final test set. The games from the challenge all share the same theme, namely cooking in a modern house environment, but differ significantly in the arrangement of the rooms, the presented objects, and the specific goal (recipe to cook). To build an agent that achieves high scores across a whole family of games, we use an actor-critic framework and prune the action-space by using ideas from hierarchical reinforcement learning and a specialized module trained on a recipe database.</p>
     
 
     
